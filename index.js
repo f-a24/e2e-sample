@@ -9,7 +9,7 @@ const resemble = require("resemblejs");
     const url = process.argv[2];
     try {
       await page.goto(url);
-      fs.statSync("beforeaaaa.png");
+      fs.statSync("before.png");
       await page.screenshot({ path: "after.png", fullPage: true });
       browser.close();
 
